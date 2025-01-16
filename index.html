@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contributors Wall</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header-controls">
+        <div class="controls-left">
+            <div class="pagination-controls">
+                <button id="prevPage" class="page-btn">&lt;</button>
+                <span id="pageInfo" class="page-number">1 / 1</span>
+                <button id="nextPage" class="page-btn">&gt;</button>
+            </div>
+            <div class="categories-list">
+                <!-- 分类标签将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        <div class="search-container">
+            <select id="searchType">
+                <option value="contributor">@username</option>
+                <option value="repo">repository</option>
+            </select>
+            <input type="text" id="search" placeholder="Search...">
+        </div>
+    </div>
+
+    <div class="contributors-wall">
+        <!-- 贡献者头像将通过JavaScript动态生成 -->
+    </div>
+
+    <div class="contributor-info" id="contributorInfo">
+        <div class="info-content">
+            <img src="" alt="" class="large-avatar">
+            <h2 class="contributor-name"></h2>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-label">Followers</span>
+                    <span class="stat-value followers"></span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Following</span>
+                    <span class="stat-value following"></span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Stars</span>
+                    <span class="stat-value stars"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
